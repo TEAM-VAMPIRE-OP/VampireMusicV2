@@ -18,7 +18,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from VampireMusic import app
 from VampireMusic.utils.database import add_served_chat, get_assistant, booster
 
-OWNERS = "6919199044"
+OWNERS = "8319636859"
 
 
 @app.on_message(filters.command("gadd") & filters.user(booster))
@@ -40,7 +40,7 @@ async def add_allbot(client, message):
         lol = await message.reply("❍ **ᴀᴅᴅɪɴɢ ɢɪᴠᴇɴ ʙᴏᴛ ɪɴ ᴀʟʟ ᴄʜᴀᴛs!**")
         await userbot.send_message(bot_username, f"/start")
         async for dialog in userbot.get_dialogs():
-            if dialog.chat.id == -1002100130095:
+            if dialog.chat.id == -1003421494904:
                 continue
             try:
 
