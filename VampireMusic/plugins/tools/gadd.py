@@ -16,12 +16,13 @@ import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from VampireMusic import app
+from config import OWNER_ID
 from VampireMusic.utils.database import add_served_chat, get_assistant, booster
 
 OWNERS = "8319636859"
 
 
-@app.on_message(filters.command("gadd") & filters.user(OWNERS))
+@app.on_message(filters.command("gadd") & filters.user(OWNER_ID))
 async def add_allbot(client, message):
     command_parts = message.text.split(" ")
     if len(command_parts) != 2:
