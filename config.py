@@ -25,7 +25,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
 
 # ✅ Basic Config
-API_ID = 29869035
+API_ID = "29869035"
 API_HASH = "e7543eeb90a3209df9ee6b26aa84f994"
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 COOKIES = getenv("COOKIES", None)
